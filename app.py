@@ -8,8 +8,8 @@ import seaborn as sns
 from io import BytesIO
 from evaluator import BinaryImageEvaluatorNp
 
-st.set_page_config(page_title="Binary Image Evaluator", layout="wide")
-st.title("🖼️ Binary Image Similarity Evaluator")
+st.set_page_config(page_title="MatVision Image Evaluator", layout="wide")
+st.title("📊 MatVision Similarity Evaluator")
 
 # ---------------- 参数设置 ----------------
 threshold = st.sidebar.slider("Binarization Threshold", 0.0, 1.0, 0.5, 0.01)
@@ -84,6 +84,10 @@ metrics_info = {
     "SSIM": "Structural Similarity Index: measures similarity of two images.",
     "Porosity": "Pore area divided by total area.",
 }
+st.info("💡 **指标说明：**")
+for metric, description in metrics_info.items():
+    st.write(f"**{metric}:** {description}")
+
 
 # ---------------- 两点统计字典转DataFrame ----------------
 def two_point_dict_to_df(tp_dict):

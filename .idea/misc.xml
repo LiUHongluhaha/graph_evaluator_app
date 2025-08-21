@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="gan_pores" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="tree_search_app" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (graph_evaluator_app)" project-jdk-type="Python SDK" />
 </project>
