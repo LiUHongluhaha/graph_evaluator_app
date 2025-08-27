@@ -9,7 +9,7 @@ from io import BytesIO
 from evaluator import BinaryImageEvaluatorNp
 
 st.set_page_config(page_title="MatVision Image Evaluator", layout="wide")
-st.title("📊 MatVision Similarity Evaluator")
+st.title("📊 MatVision 材料微观影像视觉评估平台")
 
 # ---------------- 参数设置 ----------------
 threshold = st.sidebar.slider("Binarization Threshold", 0.0, 1.0, 0.5, 0.01)
